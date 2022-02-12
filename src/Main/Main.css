@@ -1,0 +1,34 @@
+.Main {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) max-content;
+    column-gap: 95px;
+    justify-items: start;
+    align-items: start;
+
+    padding: 164px 165px 120px 165px;
+}
+
+.Main::after {
+    justify-self: center;
+    content: "";
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #3C64B1;
+    opacity: 0.12;
+}
+
+@media (max-width: 1439px) {
+    .Main::after {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .Main::after {
+        width: 100vw;
+    }
+}

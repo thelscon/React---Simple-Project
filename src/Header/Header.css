@@ -1,0 +1,35 @@
+.Header {
+    width: 100%;
+    
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 180px 23px 165px;
+}
+
+.Header::after {
+    justify-self: center;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #3C64B1;
+    opacity: 0.06;
+}
+
+@media (max-width: 1439px) {
+    .Header::after {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .Header::after {
+        width: 100vw;
+    }
+}

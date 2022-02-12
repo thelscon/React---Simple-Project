@@ -1,0 +1,29 @@
+.Navigation {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    column-gap: 48px;
+    align-items: center;
+
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+}
+
+.Navigation__a {
+    text-decoration: none;
+    color: #373F41;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.Navigation__a:hover {
+    color: #3C64B1;
+}
+
+.Header__Navigation {
+    margin-left: 48px;
+    margin-right: 48px;
+}

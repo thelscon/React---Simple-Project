@@ -1,0 +1,39 @@
+.AllRightsReserved {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 24px 355px;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    text-align: center;
+
+    font-family: 'Mulish';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    color: #C3CBCD;
+}
+
+.AllRightsReserved::after {
+    justify-self: center;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: #373F41;
+}
+
+@media (max-width: 1439px) {
+    .AllRightsReserved::after {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .AllRightsReserved::after {
+        width: 100vw;
+    }
+}
